@@ -4,9 +4,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 {
 	bool facingRight = true;							// For determining which way the player is currently facing.
 
-    DestroyableObject box;
-
-	[SerializeField] float maxSpeed = 10f;				// The fastest the player can travel in the x axis.
+	public float maxSpeed = 10f;				// The fastest the player can travel in the x axis.
 	[SerializeField] float jumpForce = 400f;			// Amount of force added when the player jumps.	
 
 	[Range(0, 1)]
@@ -60,8 +58,6 @@ public class PlatformerCharacter2D : MonoBehaviour
         }
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
-
-
 	}
 
 	public void Move(float move, bool crouch, bool jump)
@@ -109,7 +105,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 
         if(stamina > 0)
         {
-            if (!grounded && jump && doubleJump)
+            if (!grounded && jump && doubleJump && stamina >= 20)
             {
                 anim.SetBool("Jump", false);
                 anim.SetBool("Jump", true);
@@ -173,18 +169,6 @@ public class PlatformerCharacter2D : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-    void OnCollisionEnter(Collision coll)
-    {
-        if (coll.gameObject.name == "Cube")
-        {
-            Destroy(coll.gameObject);
-            Debug.Log("Collision Destroy");
-        }
-    }
-
-}
-=======
     void OnGUI()
     {
         GUI.BeginGroup(new Rect(staminaBarPos.x, staminaBarPos.y, stamina, staminaBarSize.y));
@@ -193,4 +177,3 @@ public class PlatformerCharacter2D : MonoBehaviour
     }
 
 }
->>>>>>> origin/master

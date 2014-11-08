@@ -5,7 +5,6 @@ public class Platformer2DUserControl : MonoBehaviour
 {
 	private PlatformerCharacter2D character;
     private bool jump;
-    private DestroyableObject obstacle;
 
 
 	void Awake()
@@ -24,14 +23,6 @@ public class Platformer2DUserControl : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision coll )
-    {
-        if (coll.gameObject.name == "DestroyableObject")
-        {
-            Destroy(coll.gameObject);
-        }
-    }
-
 	void FixedUpdate()
 	{
 		// Read the inputs.
@@ -41,7 +32,8 @@ public class Platformer2DUserControl : MonoBehaviour
 		#else
 		float h = Input.GetAxis("Horizontal");
 		#endif
-        bool sprintActive = Input.GetKey(KeyCode.LeftShift);
+
+
 
 		// Pass all parameters to the character control script.
 		character.Move( h, crouch , jump);
