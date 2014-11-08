@@ -19,7 +19,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 	Transform ceilingCheck;								// A position marking where to check for ceilings
 	float ceilingRadius = .01f;							// Radius of the overlap circle to determine if the player can stand up
 	Animator anim;										// Reference to the player's animator component.
-
+    bool doubleJump = false;
+    
 
     void Awake()
 	{
@@ -38,6 +39,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+        Debug.Log(jumpForce);
 	}
 
 
@@ -83,7 +85,9 @@ public class PlatformerCharacter2D : MonoBehaviour
             // Add a vertical force to the player.
             anim.SetBool("Ground", false);
             rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+            Debug.Log("hey");
         }
+        
 	}
 
 	
@@ -97,4 +101,6 @@ public class PlatformerCharacter2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+   
 }
