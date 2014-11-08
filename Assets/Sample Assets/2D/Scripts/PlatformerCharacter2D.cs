@@ -26,10 +26,14 @@ public class PlatformerCharacter2D : MonoBehaviour
     bool touchingWall = false;
     Transform wallCheck;
     float wallTouchRadius = .2f;
-    int stamina = 100;
+    public int stamina = 100;
     float sprintSpeed;
     float staminaSprintTimer;
     bool wallJumped = false;
+
+    public GUIStyle customStyle;
+    Vector2 staminaBarPos = new Vector2(10, 317);
+    Vector2 staminaBarSize = new Vector2(40, 20);
 
 
     void Awake()
@@ -41,7 +45,6 @@ public class PlatformerCharacter2D : MonoBehaviour
 		anim = GetComponent<Animator>();
         sprintSpeed = maxSpeed * 2;
 	}
-
 
 	void FixedUpdate()
 	{
@@ -61,15 +64,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 
 	}
 
-    void Update()
-    {
-        
-    }
-
-
 	public void Move(float move, bool crouch, bool jump)
 	{
-
 		// If crouching, check to see if the character can stand up
 		if(!crouch && anim.GetBool("Crouch"))
 		{
@@ -110,17 +106,29 @@ public class PlatformerCharacter2D : MonoBehaviour
             rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             doubleJump = true;
         }
-        if(!grounded && jump && doubleJump && stamina > 0)
-        {
-            anim.SetBool("Jump", false);
-            anim.SetBool("Jump", true);
-            doubleJump = false;
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
-            rigidbody2D.AddForce(new Vector2(0, jumpForce));
-            stamina -= 20;
-        }
 
-        
+        if(stamina > 0)
+        {
+            if (!grounded && jump && doubleJump)
+            {
+                anim.SetBool("Jump", false);
+                anim.SetBool("Jump", true);
+                doubleJump = false;
+                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+                rigidbody2D.AddForce(new Vector2(0, jumpForce));
+                stamina -= 20;
+            }
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                Sprint();
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                maxSpeed = 18f;
+            }
+        }
        
         if(touchingWall && jump && !wallJumped)
         {
@@ -129,8 +137,6 @@ public class PlatformerCharacter2D : MonoBehaviour
             rigidbody2D.AddForce(new Vector2(10f, jumpForce));
             doubleJump = true;
             wallJumped = true;
-            
-            
         }
 
         if (!touchingWall || grounded)
@@ -138,25 +144,13 @@ public class PlatformerCharacter2D : MonoBehaviour
             wallJumped = false;
         }
 
-        if(stamina > 0)
-        {
-            if(Input.GetKey(KeyCode.LeftShift))
-            {
-                Sprint();
-            }
-            if(Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                maxSpeed = 18f;
-            }
-        }
-        if(stamina == 0)
+        if(stamina <= 0)
         {
             maxSpeed = 18f;
         }
 
 	} 
 
-	
 	void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
@@ -177,9 +171,9 @@ public class PlatformerCharacter2D : MonoBehaviour
             staminaSprintTimer = 0;
             stamina -= 2;
         }
-        Debug.Log(stamina);
     }
 
+<<<<<<< HEAD
     void OnCollisionEnter(Collision coll)
     {
         if (coll.gameObject.name == "Cube")
@@ -190,3 +184,13 @@ public class PlatformerCharacter2D : MonoBehaviour
     }
 
 }
+=======
+    void OnGUI()
+    {
+        GUI.BeginGroup(new Rect(staminaBarPos.x, staminaBarPos.y, stamina, staminaBarSize.y));
+        GUI.Box(new Rect(0, 0, staminaBarSize.x, staminaBarSize.y), "", customStyle);
+        GUI.EndGroup();
+    }
+
+}
+>>>>>>> origin/master
