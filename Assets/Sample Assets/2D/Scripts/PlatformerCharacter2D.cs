@@ -118,15 +118,20 @@ public class PlatformerCharacter2D : MonoBehaviour
 
         
        
-        if(touchingWall && jump)
+        if(touchingWall && jump && !wallJumped)
         {
             anim.SetBool("Wall", false);
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(new Vector2(10f, jumpForce));
             doubleJump = true;
-            touchingWall = false;
+            wallJumped = true;
             
             
+        }
+
+        if (!touchingWall || grounded)
+        {
+            wallJumped = false;
         }
 
         if(stamina > 0)
