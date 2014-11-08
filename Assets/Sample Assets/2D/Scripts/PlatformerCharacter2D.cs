@@ -12,6 +12,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 	
 	[SerializeField] bool airControl = false;			// Whether or not a player can steer while jumping;
 	[SerializeField] LayerMask whatIsGround;			// A mask determining what is ground to the character
+    [SerializeField] LayerMask whatIsWall;              // A mask determining what is wall to the character
 	
 	Transform groundCheck;								// A position marking where to check if the player is grounded.
 	float groundedRadius = .2f;							// Radius of the overlap circle to determine if grounded
@@ -20,6 +21,9 @@ public class PlatformerCharacter2D : MonoBehaviour
 	float ceilingRadius = .01f;							// Radius of the overlap circle to determine if the player can stand up
 	Animator anim;										// Reference to the player's animator component.
     bool doubleJump = false;
+    bool touchingWall = false;
+    Transform wallCheck;
+    float wallTouchRadius = .2f;
     
 
     void Awake()
@@ -27,6 +31,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 		// Setting up references.
 		groundCheck = transform.Find("GroundCheck");
 		ceilingCheck = transform.Find("CeilingCheck");
+        wallCheck = transform.Find("WallCheck");
 		anim = GetComponent<Animator>();
 	}
 
@@ -36,7 +41,13 @@ public class PlatformerCharacter2D : MonoBehaviour
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
 		anim.SetBool("Ground", grounded);
-
+        touchingWall = Physics2D.OverlapCircle(wallCheck.position, wallTouchRadius, whatIsWall);
+        
+        if(touchingWall)
+        {
+            grounded = false;
+            doubleJump = false;
+        }
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
 	}
@@ -88,11 +99,24 @@ public class PlatformerCharacter2D : MonoBehaviour
         }
         if(!grounded && jump && doubleJump)
         {
+            anim.SetBool("Jump", false);
+            anim.SetBool("Jump", true);
             doubleJump = false;
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
         }
-	}
+
+       
+       
+        if(touchingWall && jump)
+        {
+            anim.SetBool("Wall", false);
+            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+            rigidbody2D.AddForce(new Vector2(10f, jumpForce));
+            doubleJump = true;
+            Debug.Log("maina");
+        }
+	} 
 
 	
 	void Flip ()
@@ -106,5 +130,6 @@ public class PlatformerCharacter2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
+    
    
 }
