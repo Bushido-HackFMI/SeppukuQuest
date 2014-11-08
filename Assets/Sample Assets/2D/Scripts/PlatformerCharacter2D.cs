@@ -39,7 +39,6 @@ public class PlatformerCharacter2D : MonoBehaviour
 
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
-        Debug.Log(jumpForce);
 	}
 
 
@@ -85,9 +84,14 @@ public class PlatformerCharacter2D : MonoBehaviour
             // Add a vertical force to the player.
             anim.SetBool("Ground", false);
             rigidbody2D.AddForce(new Vector2(0f, jumpForce));
-            Debug.Log("hey");
+            doubleJump = true;
         }
-        
+        if(!grounded && jump && doubleJump)
+        {
+            doubleJump = false;
+            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+            rigidbody2D.AddForce(new Vector2(0, jumpForce));
+        }
 	}
 
 	
