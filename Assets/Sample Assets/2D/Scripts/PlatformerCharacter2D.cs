@@ -4,6 +4,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 {
 	bool facingRight = true;							// For determining which way the player is currently facing.
 
+    DestroyableObject box;
+
 	[SerializeField] float maxSpeed = 10f;				// The fastest the player can travel in the x axis.
 	[SerializeField] float jumpForce = 400f;			// Amount of force added when the player jumps.	
 
@@ -55,6 +57,8 @@ public class PlatformerCharacter2D : MonoBehaviour
         }
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+
+
 	}
 
     void Update()
@@ -176,5 +180,13 @@ public class PlatformerCharacter2D : MonoBehaviour
         Debug.Log(stamina);
     }
 
-   
+    void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.name == "Cube")
+        {
+            Destroy(coll.gameObject);
+            Debug.Log("Collision Destroy");
+        }
+    }
+
 }
