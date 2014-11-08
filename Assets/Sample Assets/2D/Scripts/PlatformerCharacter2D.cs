@@ -24,7 +24,11 @@ public class PlatformerCharacter2D : MonoBehaviour
     bool touchingWall = false;
     Transform wallCheck;
     float wallTouchRadius = .2f;
-    
+    int stamina = 100;
+    float sprintSpeed;
+    float staminaSprintTimer;
+    bool wallJumped = false;
+
 
     void Awake()
 	{
@@ -33,6 +37,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 		ceilingCheck = transform.Find("CeilingCheck");
         wallCheck = transform.Find("WallCheck");
 		anim = GetComponent<Animator>();
+        sprintSpeed = maxSpeed * 2;
 	}
 
 
@@ -52,10 +57,14 @@ public class PlatformerCharacter2D : MonoBehaviour
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
 	}
 
+    void Update()
+    {
+        
+    }
+
 
 	public void Move(float move, bool crouch, bool jump)
 	{
-
 
 		// If crouching, check to see if the character can stand up
 		if(!crouch && anim.GetBool("Crouch"))
@@ -97,16 +106,17 @@ public class PlatformerCharacter2D : MonoBehaviour
             rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             doubleJump = true;
         }
-        if(!grounded && jump && doubleJump)
+        if(!grounded && jump && doubleJump && stamina > 0)
         {
             anim.SetBool("Jump", false);
             anim.SetBool("Jump", true);
             doubleJump = false;
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
+            stamina -= 20;
         }
 
-       
+        
        
         if(touchingWall && jump)
         {
@@ -114,8 +124,27 @@ public class PlatformerCharacter2D : MonoBehaviour
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(new Vector2(10f, jumpForce));
             doubleJump = true;
-            Debug.Log("maina");
+            touchingWall = false;
+            
+            
         }
+
+        if(stamina > 0)
+        {
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                Sprint();
+            }
+            if(Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                maxSpeed = 18f;
+            }
+        }
+        if(stamina == 0)
+        {
+            maxSpeed = 18f;
+        }
+
 	} 
 
 	
@@ -130,6 +159,17 @@ public class PlatformerCharacter2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-    
+    void Sprint()
+    {
+        maxSpeed = sprintSpeed;
+        staminaSprintTimer += Time.deltaTime;
+        if(staminaSprintTimer >= 0.10)
+        {
+            staminaSprintTimer = 0;
+            stamina -= 2;
+        }
+        Debug.Log(stamina);
+    }
+
    
 }

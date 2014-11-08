@@ -33,10 +33,13 @@ public class Platformer2DUserControl : MonoBehaviour
 		float h = Input.GetAxis("Horizontal");
 		#endif
 
+        bool sprintActive = Input.GetKey(KeyCode.LeftShift);
+
 		// Pass all parameters to the character control script.
-		character.Move( h, crouch , jump );
+		character.Move( h, crouch , jump);
 
         // Reset the jump input once it has been used.
 	    jump = false;
+        
 	}
 }
