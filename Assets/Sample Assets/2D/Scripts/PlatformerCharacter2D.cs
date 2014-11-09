@@ -33,6 +33,7 @@ public class PlatformerCharacter2D : MonoBehaviour
     Vector2 staminaBarPos = new Vector2(10, 317);
     Vector2 staminaBarSize = new Vector2(40, 20);
 
+    public AnimationClip wall;
 
     void Awake()
 	{
@@ -138,13 +139,13 @@ public class PlatformerCharacter2D : MonoBehaviour
             rigidbody2D.AddForce(new Vector2(10f, jumpForce));
             doubleJump = true;
             wallJumped = true;
+            animation.Play(wall.name);
         }
 
         if (!touchingWall || grounded)
         {
             wallJumped = false;
         }
-
 
         if(stamina <= 0)
         {
