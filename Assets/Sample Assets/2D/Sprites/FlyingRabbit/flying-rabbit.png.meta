@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 1ab284d7229150f4ca1281130237a5c8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flying-rabbit_0
+    21300002: flying-rabbit_1
+    21300004: flying-rabbit_2
+    21300006: flying-rabbit_3
+    21300008: flying-rabbit_4
+    21300010: flying-rabbit_5
+    21300012: flying-rabbit_6
+    21300014: flying-rabbit_7
+    21300016: flying-rabbit_8
+    21300018: flying-rabbit_9
+    21300020: flying-rabbit_10
+    21300022: flying-rabbit_11
+    21300024: flying-rabbit_12
+    21300026: flying-rabbit_13
+    21300028: flying-rabbit_14
+    21300030: flying-rabbit_15
+    21300032: flying-rabbit_16
+    21300034: flying-rabbit_17
+    21300036: flying-rabbit_18
+    21300038: flying-rabbit_19
+    21300040: flying-rabbit_20
+    21300042: flying-rabbit_21
+    21300044: flying-rabbit_22
+    21300046: flying-rabbit_23
+    21300048: flying-rabbit_24
+    21300050: flying-rabbit_25
+    21300052: flying-rabbit_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: flying-rabbit_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 242
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 240
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 242
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 244
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_4
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 247
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 246
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 242
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 242
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 182
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 182
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_10
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 188
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_11
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 191
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 190
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 187
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 183
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 119
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 123
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 122
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 120
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 122
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 123
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 65
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 66
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 68
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_24
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 63
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_25
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 62
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flying-rabbit_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

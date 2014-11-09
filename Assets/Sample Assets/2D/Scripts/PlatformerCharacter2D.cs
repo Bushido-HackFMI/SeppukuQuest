@@ -141,6 +141,7 @@ public class PlatformerCharacter2D : MonoBehaviour
             wallJumped = false;
         }
 
+
         if(stamina <= 0)
         {
             maxSpeed = 18f;
