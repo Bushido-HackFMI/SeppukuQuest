@@ -1,0 +1,820 @@
+fileFormatVersion: 2
+guid: 199170608e53253428046027bc2fcb0d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle-1
+    21300002: move-1
+    21300004: move-2
+    21300006: move-3
+    21300008: move-4
+    21300010: move-5
+    21300012: move-6
+    21300014: move-7
+    21300016: move-8
+    21300018: AllMove_9
+    21300020: AllMove_10
+    21300022: AllMove_11
+    21300024: AllMove_12
+    21300026: AllMove_13
+    21300028: AllMove_14
+    21300030: AllMove_15
+    21300032: AllMove_16
+    21300034: AllMove_17
+    21300036: AllMove_18
+    21300038: AllMove_19
+    21300040: AllMove_20
+    21300042: AllMove_21
+    21300044: AllMove_22
+    21300046: AllMove_23
+    21300048: AllMove_24
+    21300050: AllMove_25
+    21300052: AllMove_26
+    21300054: AllMove_27
+    21300056: AllMove_28
+    21300058: AllMove_29
+    21300060: AllMove_30
+    21300062: AllMove_31
+    21300064: AllMove_32
+    21300066: AllMove_33
+    21300068: AllMove_34
+    21300070: AllMove_35
+    21300072: AllMove_36
+    21300074: AllMove_37
+    21300076: AllMove_38
+    21300078: AllMove_39
+    21300080: AllMove_40
+    21300082: AllMove_41
+    21300084: AllMove_42
+    21300086: AllMove_43
+    21300088: AllMove_44
+    21300090: AllMove_45
+    21300092: AllMove_46
+    21300094: AllMove_47
+    21300096: AllMove_48
+    21300098: AllMove_49
+    21300100: AllMove_50
+    21300102: AllMove_51
+    21300104: AllMove_52
+    21300106: AllMove_53
+    21300108: AllMove_54
+    21300110: AllMove_55
+    21300112: AllMove_56
+    21300114: AllMove_57
+    21300116: AllMove_58
+    21300118: AllMove_59
+    21300120: AllMove_60
+    21300122: AllMove_61
+    21300124: AllMove_62
+    21300126: AllMove_63
+    21300128: AllMove_64
+    21300130: AllMove_65
+    21300132: JumpStart
+    21300134: JumpEnd
+    21300136: AllMove_68
+    21300138: AllMove_69
+    21300140: AllMove_70
+    21300142: AllMove_71
+    21300144: AllMove_72
+    21300146: AllMove_73
+    21300148: AllMove_74
+    21300150: AllMove_75
+    21300152: AllMove_76
+    21300154: AllMove_77
+    21300156: AllMove_78
+    21300158: AllMove_79
+    21300160: AllMove_80
+    21300162: AllMove_81
+    21300164: AllMove_82
+    21300166: AllMove_83
+    21300168: AllMove_84
+    21300170: AllMove_85
+    21300172: AllMove_86
+    21300174: AllMove_87
+    21300176: AllMove_88
+    21300178: AllMove_89
+    21300180: AllMove_90
+    21300182: AllMove_91
+    21300184: AllMove_92
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: idle-1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2046
+        width: 149
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2046
+        width: 124
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-2
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2046
+        width: 84
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2046
+        width: 69
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2048
+        width: 112
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 2046
+        width: 127
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-6
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 2046
+        width: 82
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-7
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 2046
+        width: 69
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: move-8
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 2046
+        width: 113
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_9
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1814
+        width: 160
+        height: 194
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1814
+        width: 208
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1814
+        width: 166
+        height: 194
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_12
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1814
+        width: 149
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1814
+        width: 171
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_14
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1814
+        width: 98
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_15
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1814
+        width: 135
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_16
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1814
+        width: 111
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_17
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1561
+        width: 169
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1561
+        width: 211
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_19
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1561
+        width: 144
+        height: 214
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_20
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1561
+        width: 151
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1561
+        width: 150
+        height: 237
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_22
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1561
+        width: 149
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_23
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1561
+        width: 148
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_24
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1561
+        width: 149
+        height: 237
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_25
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1561
+        width: 151
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_26
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1400
+        width: 149
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_27
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1400
+        width: 139
+        height: 131
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_28
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1400
+        width: 175
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_29
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1400
+        width: 157
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_30
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1400
+        width: 149
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_31
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1400
+        width: 182
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_32
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1400
+        width: 140
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_33
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1400
+        width: 149
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_34
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 1400
+        width: 161
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_35
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1171
+        width: 109
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_36
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1171
+        width: 102
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_37
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1171
+        width: 171
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_38
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1171
+        width: 118
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1171
+        width: 171
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_40
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1171
+        width: 87
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_41
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1171
+        width: 136
+        height: 192
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_42
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1222
+        width: 167
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_43
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1227
+        width: 162
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_44
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1234
+        width: 118
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_45
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1234
+        width: 118
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_46
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 1250
+        width: 106
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_47
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 895
+        width: 149
+        height: 227
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 895
+        width: 128
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_49
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 895
+        width: 90
+        height: 227
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 895
+        width: 70
+        height: 221
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_51
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 895
+        width: 111
+        height: 221
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_52
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 895
+        width: 127
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_53
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 895
+        width: 84
+        height: 229
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_54
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 895
+        width: 69
+        height: 221
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_55
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1207
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_56
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1096
+        width: 118
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_57
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1107
+        width: 106
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_58
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1114
+        width: 91
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_59
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1109
+        width: 119
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_60
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 895
+        width: 112
+        height: 218
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_61
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 931
+        width: 135
+        height: 151
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_62
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 900
+        width: 247
+        height: 193
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_80
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 273
+        width: 142
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_81
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 273
+        width: 165
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AllMove_92
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 21
+        width: 114
+        height: 218
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: JumpStart
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 405
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: JumpEnd
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 404
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
