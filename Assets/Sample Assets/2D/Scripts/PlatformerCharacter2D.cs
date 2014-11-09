@@ -120,10 +120,9 @@ public class PlatformerCharacter2D : MonoBehaviour
                 Sprint();
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            if (Input.anyKey != Input.GetKey(KeyCode.LeftShift))
             {
                 maxSpeed = 18f;
-
                 playerIsSprinting = false;
             }
         }
@@ -165,8 +164,10 @@ public class PlatformerCharacter2D : MonoBehaviour
     {
         maxSpeed = sprintSpeed;
         staminaSprintTimer += Time.deltaTime;
+        Debug.Log("Before check");
         if(staminaSprintTimer >= 0.10)
         {
+            Debug.Log("in if");
             staminaSprintTimer = 0;
             stamina -= 2;
             playerIsSprinting = true;
