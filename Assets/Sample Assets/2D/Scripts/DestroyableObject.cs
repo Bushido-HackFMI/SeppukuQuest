@@ -19,7 +19,7 @@ public class DestroyableObject : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (this.gameObject != null)
+            if (this.gameObject != null && player.playerIsSprinting)
             {
                 Destroy(this.gameObject);
             }
