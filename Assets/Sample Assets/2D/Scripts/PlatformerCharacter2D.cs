@@ -60,7 +60,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
 	}
 
-	public void Move(float move, bool crouch, bool jump)
+	public void Move(float move, bool crouch, bool jump, bool seppuku)
 	{
 		// If crouching, check to see if the character can stand up
 		if(!crouch && anim.GetBool("Crouch"))
@@ -70,6 +70,10 @@ public class PlatformerCharacter2D : MonoBehaviour
 				crouch = true;
 		}
 
+		if(seppuku)
+		{
+			anim.Play("Seppuku");
+		}
 		// Set whether or not the character is crouching in the animator
 		anim.SetBool("Crouch", crouch);
 
