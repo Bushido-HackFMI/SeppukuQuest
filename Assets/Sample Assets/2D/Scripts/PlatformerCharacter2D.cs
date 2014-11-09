@@ -115,15 +115,14 @@ public class PlatformerCharacter2D : MonoBehaviour
                 stamina -= 20;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 Sprint();
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            if (Input.anyKey != Input.GetKey(KeyCode.LeftShift))
             {
                 maxSpeed = 18f;
-
                 playerIsSprinting = false;
             }
         }
