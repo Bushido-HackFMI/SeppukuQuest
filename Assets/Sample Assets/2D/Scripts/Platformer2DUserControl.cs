@@ -5,7 +5,6 @@ public class Platformer2DUserControl : MonoBehaviour
 {
 	private PlatformerCharacter2D character;
     private bool jump;
-	private bool seppuku;
 
 
 	void Awake()
@@ -20,7 +19,6 @@ public class Platformer2DUserControl : MonoBehaviour
         if (CrossPlatformInput.GetButtonDown("Jump")) jump = true;
 #else
         if (Input.GetButtonDown("Jump")) jump = true;
-		if (Input.GetButtonDown("Fire2")) seppuku = true;
 #endif
 
     }
@@ -38,7 +36,7 @@ public class Platformer2DUserControl : MonoBehaviour
 
 
 		// Pass all parameters to the character control script.
-		character.Move( h, crouch , jump, seppuku);
+		character.Move( h, crouch , jump);
 
         // Reset the jump input once it has been used.
 	    jump = false;

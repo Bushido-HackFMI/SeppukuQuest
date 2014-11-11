@@ -30,7 +30,7 @@ public class PlatformerCharacter2D : MonoBehaviour
     bool wallJumped = false;
 
     public GUIStyle customStyle;
-    Vector2 staminaBarPos = new Vector2(10, 317);
+    Vector2 staminaBarPos = new Vector2(56, 180);
     Vector2 staminaBarSize = new Vector2(40, 20);
 
     public AnimationClip wall;
@@ -61,7 +61,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
 	}
 
-	public void Move(float move, bool crouch, bool jump, bool seppuku)
+	public void Move(float move, bool crouch, bool jump)
 	{
 		// If crouching, check to see if the character can stand up
 		if(!crouch && anim.GetBool("Crouch"))
@@ -71,10 +71,6 @@ public class PlatformerCharacter2D : MonoBehaviour
 				crouch = true;
 		}
 
-		if(seppuku)
-		{
-			anim.Play("Seppuku");
-		}
 		// Set whether or not the character is crouching in the animator
 		anim.SetBool("Crouch", crouch);
 
@@ -186,8 +182,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.BeginGroup(new Rect(staminaBarPos.x, staminaBarPos.y, stamina, staminaBarSize.y));
-        GUI.Box(new Rect(0, 0, staminaBarSize.x, staminaBarSize.y), "", customStyle);
+        GUI.BeginGroup(new Rect(staminaBarPos.x, staminaBarPos.y, staminaBarSize.x, stamina* 3));
+        GUI.Box(new Rect(0, 0, staminaBarSize.x, stamina* 3), "", customStyle);
         GUI.EndGroup();
     }
 }

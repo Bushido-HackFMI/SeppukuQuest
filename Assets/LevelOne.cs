@@ -9,6 +9,10 @@ public class LevelOne : MonoBehaviour {
     public Font fontHUD;
     public Canvas canvas;
     public WinScript win;
+    public PlatformerCharacter2D player;
+    public Camera mainCam;
+    public AnimationClip gosho;
+    public suicide suicido;
     
     
     
@@ -56,7 +60,19 @@ public class LevelOne : MonoBehaviour {
             GUI.TextArea(new Rect(1100, 20, 100, 100), ((int)levelTimer + 1).ToString(), guiStyle);
             canvas.gameObject.SetActive(false);
         }
-        else
+
+        if(win.winEvent)
+        {
+            levelTimer = 1f;
+            mainCam.orthographic = true;
+            mainCam.orthographicSize = 4;
+            mainCam.transform.position = new Vector3(-20, 8, -10);
+            win.gameObject.transform.position = new Vector3(win.gameObject.transform.position.x,win.transform.position.y,-100);
+            player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -20);
+            suicido.transform.position = new Vector3(suicido.transform.position.x, suicido.transform.position.y, 5);
+            
+        }
+        if (!Timer())
         {
             canvas.gameObject.SetActive(true);
             GUI.depth = -1;
@@ -65,8 +81,20 @@ public class LevelOne : MonoBehaviour {
 
     public void onClick()
     {
-        Application.LoadLevel("Level1");
+        Application.LoadLevel("Level1Skeleton");
         Time.timeScale = 1.0f;
         
+    }
+
+    public bool isDead()
+    {
+        if(true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
